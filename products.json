@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "68d15a9f2f0e535ae747c00f"
+  },
+  "name": "Laptop",
+  "description": "15-inch gaming laptop with high-performance graphics",
+  "price": 1500,
+  "category": "Electronics",
+  "stock": 25,
+  "sku": "LAP12345",
+  "manufacturer": "TechBrand"
+},
+{
+  "_id": {
+    "$oid": "68d15a9f2f0e535ae747c010"
+  },
+  "name": "Smartphone",
+  "description": "5G smartphone with 128GB storage",
+  "price": 800,
+  "category": "Electronics",
+  "stock": 100,
+  "sku": "PHN67890",
+  "manufacturer": "PhoneCorp"
+},
+{
+  "_id": {
+    "$oid": "68d15a9f2f0e535ae747c011"
+  },
+  "name": "Office Chair",
+  "description": "Ergonomic office chair with adjustable height",
+  "price": 200,
+  "category": "Furniture",
+  "stock": 50,
+  "sku": "CHR24680",
+  "manufacturer": "ComfortSeating"
+},
+{
+  "_id": {
+    "$oid": "68d15a9f2f0e535ae747c012"
+  },
+  "name": "Coffee Maker",
+  "description": "12-cup programmable coffee maker",
+  "price": 75,
+  "category": "Appliances",
+  "stock": 40,
+  "sku": "CFM13579",
+  "manufacturer": "BrewMaster"
+}]

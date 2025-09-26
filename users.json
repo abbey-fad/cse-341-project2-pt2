@@ -1,0 +1,33 @@
+[
+  {
+    "_id": {
+      "$oid": "68c06a63d1e17786ec6447da"
+    },
+    "firstName": "Adebola",
+    "lastName": "Olawale",
+    "email": "adebola@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "1998-04-15"
+  },
+  {
+    "_id": {
+      "$oid": "68c06be3d1e17786ec6447dd"
+    },
+    "firstName": "Chiamaka",
+    "lastName": "Okeke",
+    "email": "chiamaka@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "1994-08-23"
+  },
+  {
+    "_id": {
+      "$oid": "68c06d9adfb1385db49bd13d"
+    },
+    "firstName": "Musa",
+    "lastName": "Ibrahim",
+    "email": "musa@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "1997-12-05"
+  }
+  
+]

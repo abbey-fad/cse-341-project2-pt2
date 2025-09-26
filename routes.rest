@@ -1,0 +1,79 @@
+//LOCALHOST
+### Get all contacts
+GET http://localhost:3000/users
+
+
+### Get contact by Id
+GET http://localhost:3000/users/68c06a63d1e17786ec6447d
+
+
+### Create contact
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "",
+    "lastName": "",
+    "email": "olabola@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "1998-04-15"
+}
+
+
+### Update contact
+PUT http://localhost:3000/users/68c06be3d1e17786ec6447dd HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Babatunde",
+  "lastName": "Doe",
+  "favoriteColor": "any",
+  "birthday": "2000-01-01"
+}
+
+
+### Delete contact
+DELETE http://localhost:3000/users/68c5677627f2d62dcb1b2321 HTTP/1.1
+Content-Type: application/json
+
+// -----------------------
+// PRODUCTS TESTING
+// -----------------------
+
+### Get all products
+GET http://localhost:3000/products
+
+### Get product by Id
+GET http://localhost:3000/products/68d15a9f2f0e535ae747c00z
+
+### Create product
+POST http://localhost:3000/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Tablet",
+  "description": "10-inch tablet with 64GB storage",
+  "price": 400,
+  "category": "Electronics",
+  "stock": 60,
+  "sku": "TAB12345",
+  "manufacturer": "TechBrand"
+}
+
+### Update product
+PUT http://localhost:3000/products/68d15a9f2f0e535ae747c010 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Smartphone",
+  "description": "5G smartphone with 256GB storage and improved camera",
+  "price": 950,
+  "category": "Electronics",
+  "stock": 80,
+  "sku": "PHN67890",
+  "manufacturer": "PhoneCorp"
+}
+
+### Delete product
+DELETE http://localhost:3000/products/68d1683e7b9f2d2c13f35b0f
+Content-Type: application/json
