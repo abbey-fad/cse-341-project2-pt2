@@ -5,10 +5,10 @@
     "description": "Users and Products API",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse-341-project2-pt2.onrender.com/",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/login": {
