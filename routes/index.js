@@ -7,12 +7,14 @@ router.use('/users', require('./users'));
 
 router.use('/products', require('./products'));
 
-router.get('/login', passport.authenticate('github'), (req, res) => {});
+router.get('/login', passport.authenticate('github', { scope: ['user:email'] }));
 
-router.get('/logout', function (req, res, next) {
-	req.logout(function(err) {
-		if (err) { return next(err); }
+router.get('/github/callback',
+	passport.authenticate('github', { failureRedirect: '/' }),
+	(req, res) => {
+		req.session.user = req.user;
 		res.redirect('/');
-	});
-})
+	}
+);
+
 module.exports = router;
