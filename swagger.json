@@ -5,7 +5,7 @@
     "description": "Users and Products API",
     "version": "1.0.0"
   },
-  "host": "cse-341-project2-pt2.onrender.com/",
+  "host": "cse-341-project2-pt2.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
