@@ -17,4 +17,19 @@ router.get('/github/callback',
 	}
 );
 
+router.get('/logout', (req, res, next) => {
+	try {
+		req.logout((err) => {
+			if (err) return next(err);
+			req.session.destroy(() => {
+				res.clearCookie('connect.sid');
+				res.redirect('/');
+			});
+		});
+	} catch (error) {
+		console.error('Logout error:', error);
+		res.status(500).json({ message: 'Error logging out' });
+	}
+});
+
 module.exports = router;
